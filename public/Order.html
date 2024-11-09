@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <title>Order Page - Futured Restaurant</title>
+    <link rel="stylesheet" href="../StyleSheet/mainStyle.css">
+    <link rel="stylesheet" href="../StyleSheet/order.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <input type="checkbox" name="checked" id="checked">
+    <div id="Error">
+        <i class="fa-solid fa-square-xmark" style="font-size: 1.5rem;"></i>
+        <p style="font-size: 1rem;">Please choose a payment method.</p>
+    </div>
+    <div id="loading"></div>
+    </div>
+    <div class="cart">
+        <label for="checked"><i class="fa-solid fa-arrow-right"></i></label>
+        <h2 class="cart-heading">Cart</h2>
+        <p class="carts-text">There is nothing in cart right now.</p>
+        <div class="carts">
+        </div>
+        <div class="total-order">
+            <p>Total: <span>00</span>.00</p>
+            <button>Order Now</button>
+        </div>
+    </div>
+    <div class="Resturant-conTainer">
+        <div class="navBar">
+            <div class="navLogo">
+                <img src="../images/logo.png" alt="">
+            </div>
+            <div class="mainMenu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/pakfood">Pakistani</a></li>
+                <li><a href="/chinesefood">Chinese</a></li>
+                <li><a href="/fastfood">Fast Food</a></li>
+            </div>
+            <div class="btnOrder">
+                <a href="/signin">Sign in</a>
+                <div class="sig-in">
+                    <label for="checked"><i class="fa-solid fa-cart-shopping"></i></label>
+                    <div class="hover">
+                        <img src="../images/avatar.png" alt="">
+                        <div class="flex" onclick="logout()">
+                            <i style="color: red;" class="fa-solid fa-arrow-right-from-bracket"></i>
+                            <p style="width: 70px;">log out</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Order</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dish</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- <tr>
+                    <td>
+                        <div class="cart1">
+                            <img src="./images/Fast-Food/burger.jpg" alt="">
+                            <div class="cart-detail">
+                                <p class="cart-name">Zinger Burger</p>
+                                <p class="cart-price">Rs.<span>700</span>.00</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>X1</td>
+                    <td>700</td>
+                </tr> -->
+            </tbody>
+        </table>
+        <div class="content">
+            <h2>Address</h2>
+            <div class="current">
+                <p style="font-weight: bolder;">Current Address: </p>
+                <p id="Address"></p>
+            </div>
+            <div class="add">
+                <i class="fa-solid fa-plus"></i>
+                <div class="input">
+                    <input type="text">
+                    <button>Submit</button>
+                    <p></p>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <h2>Payment</h2>
+            <div class="current1">
+                <p>Choose a Payment method:</p>
+                <div style="margin-top: 30px;">
+                    <input type="radio" id="easypaisa" name="Payment" value="easypaisa">
+                    <label for="easypaisa"><img src="../images/easypaisa-removebg-preview.png" alt="Easypaisa"></label>
+                </div>
+                <div>
+                    <input type="radio" id="jazzcash" name="Payment" value="jazzcash">
+                    <label for="jazzcash"><img style="height: 28px;" src="../images/jazz_cash-removebg-preview.png" alt="Jazz Cash"></label>
+                </div>
+                <div>
+                    <input type="radio" id="cash" name="Payment" value="cash">
+                    <label for="cash">Cash on Delivery</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="content" style="padding-top: 80px;">
+            <h2>Total</h2>
+            <div class="current1 flex">
+                <div class="left1">
+                    <p>Dishes Price:</p>
+                    <p>Delivery Fee:</p>
+                    <p>Cash Charges:</p>
+                    <p style="margin-top: 9px;">Total:</p>
+                </div>
+                <div class="right1">
+                    <P><span>00</span>.00</P>
+                    <P>200.00</P>
+                    <P>50.00</P>
+                    <P style="margin-top: 9px;"><span>00</span>.00</P>
+                </div>
+            </div>
+        </div>
+        <div class="btn1">
+            <button>Order</button>
+        </div>
+    </div>
+
+    <script src="/src/order.js"></script>
+</body>
+
+</html>

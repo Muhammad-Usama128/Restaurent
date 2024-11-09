@@ -1,0 +1,31 @@
+.Resturant-conTainer .herSection {
+  width: 100%;
+  height: 90vh;
+  background: url("../images/pakistani-food.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Resturant-conTainer .aboutFastFood {
+  background: url("../images/pakistani-food-pictures-wallpapers-234955-1503058-376257.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin-top: 75px;
+}
+
+@media (max-width: 768px) {
+  .Resturant-conTainer .herSection {
+      height: 50vh;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .Resturant-conTainer .herSection{
+      height: 40vh;
+  }
+}
